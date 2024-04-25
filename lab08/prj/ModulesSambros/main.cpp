@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "modules.h"
+#include "ModulesSambros.h"
 
 double s_calculation(double x, double y, double z) {
     double numerator = sqrt(1 + x - 3*cos(x));
