@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1714401407 source:e:\bmtp\gitsms\sambros-serhii-kn23\lab09\prj\testdriver\main.cpp
+	<iostream>
+	<string>
+	"ModulesSambros.h"
+
+1714401338 e:\bmtp\gitsms\sambros-serhii-kn23\lab08\prj\modulessambros.h
+	<string>
+
