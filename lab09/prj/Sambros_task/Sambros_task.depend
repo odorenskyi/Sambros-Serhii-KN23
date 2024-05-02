@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1714680498 source:e:\bmtp\gitsms\sambros-serhii-kn23\lab09\prj\sambros_task\main.cpp
+	<iostream>
+	<string>
+	<locale.h>
+	"ModulesSambros.h"
+
+1714401760 e:\bmtp\gitsms\sambros-serhii-kn23\lab08\prj\modulessambros.h
+	<string>
+
