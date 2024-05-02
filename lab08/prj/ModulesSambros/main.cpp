@@ -44,7 +44,7 @@ double FahrenheitToCelsius(double fahrenheit) {
 string NumberBits(unsigned short number) {
     int Zero = 0;
     int One = 0;
-
+    unsigned short temp = number;
     for (int i = 0; i < 16; ++i) {
         if (number & 0x1) {
             One++;
@@ -54,6 +54,6 @@ string NumberBits(unsigned short number) {
         number >>= 1;
     }
 
-    return (number & 0x1) ? "a string of zero: " + to_string(Zero)
-                          : "a string of one: " + to_string(One);
+    return (temp & 0x1) ? "рядок одиниць: " + to_string(One)
+                        : "рядок нулiв: " + to_string(Zero);
 }

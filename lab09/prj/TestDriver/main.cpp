@@ -1,31 +1,33 @@
 #include <iostream>
 #include <string>
+#include <locale.h>
 #include "ModulesSambros.h"
 
 using namespace std;
 
 int main() {
+    setlocale(LC_ALL, "ukr");
     double waveHeight;
-    cout << "Enter wave height in meters: ";
+    cout << "Висота хвилi у метрах: ";
     cin >> waveHeight;
 
     string grade = WaveGrade(waveHeight);
-    cout << "Wave grade: " << grade << endl;
+    cout << "Бал хвилювання моря: " << grade << endl;
 
     // 9.2
     double fahrenheit, celsius;
 
-    cout << "Enter temperature in fahrenheit: ";
+    cout << "Температура у Фаренгейтах: ";
     cin >> fahrenheit;
 
     celsius = FahrenheitToCelsius(fahrenheit);
 
-    cout << "in celsius: " << celsius << endl;
+    cout << "Температура у градусах Цельсiя: " << celsius << endl;
 
     // 9.3
     unsigned short N;
 
-    cout << "Enter a natural number N (0 to 65535): ";
+    cout << "Число N (вiд 0 до 65535): ";
     cin >> N;
 
     string result = NumberBits(N);
