@@ -4,10 +4,12 @@
 
 double s_calculation(double x, double y, double z);
 
-string WaveGrade(double waveHeight);
+std::string WaveGrade(double waveHeight);
 
 double FahrenheitToCelsius(double fahrenheit);
 
-string NumberBits(unsigned short number);
+std::string NumberBits(unsigned short number);
+
+std::string TextFileFunc();
 
 #endif // MODULESSAMBROS_H_INCLUDED

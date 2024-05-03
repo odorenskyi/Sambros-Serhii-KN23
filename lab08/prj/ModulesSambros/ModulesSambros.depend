@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1714396110 source:e:\bmtp\gitsms\sambros-serhii-kn23\lab08\prj\modulessambros\main.cpp
+1714743899 source:e:\bmtp\gitsms\sambros-serhii-kn23\lab08\prj\modulessambros\main.cpp
 	<iostream>
 	<cmath>
-	"ModulesSambros.h"
+	<fstream>
 	<string>
+	<ctime>
+	"ModulesSambros.h"
 
 1714037825 e:\bmtp\gitsms\sambros-serhii-kn23\lab08\prj\modulessambros\modulessambros.h
 	<cmath>

@@ -10,5 +10,7 @@ string WaveGrade(double waveHeight);
 double FahrenheitToCelsius(double fahrenheit);
 
 string NumberBits(unsigned short number);
+
+string TextFileFunc();
 #endif // MODULESSAMBROS_H_INCLUDED
 
