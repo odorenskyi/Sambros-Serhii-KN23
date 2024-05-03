@@ -11,6 +11,8 @@ double FahrenheitToCelsius(double fahrenheit);
 
 string NumberBits(unsigned short number);
 
-string TextFileFunc();
+void Devinfos();
+
+void InputFile(const std::string& inputFilename);
 #endif // MODULESSAMBROS_H_INCLUDED
 

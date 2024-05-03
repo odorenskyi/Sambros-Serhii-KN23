@@ -61,38 +61,25 @@ string NumberBits(unsigned short number) {
 }
 
 
-
-string TextFileFunc() {
-    ofstream fout("output.txt");
-    if (!fout.is_open()) {
-        cerr << "Не вдалося відкрити вихідний файл." << endl;
-        return "";
-    }
-
+void Devinfos(ofstream& fout) {
     fout << "==================================================" << endl;
     fout << "Ім'я розробника: Самброс Сергій" << endl;
     fout << "Установа/організація: Центральноукраїнський національний технічний університет" << endl;
     fout << "Місто, країна: Кропивницький, Україна" << endl;
     fout << "Рік розробки: 2024" << endl;
     fout << "==================================================" << endl;
+}
 
-    ifstream input("input.txt");
-    if (!input.is_open()) {
-        cerr << "Не вдалося відкрити вхідний файл." << endl;
-        return "";
-    }
+void InputFile(const string& inputFilename, ofstream& fout) {
+    ifstream input(inputFilename);
 
     string text;
     getline(input, text);
-    fout << "Кількість символів у вхідному файлі: " << text.size() << endl;
+    cout << "Кількість символів у вхідному файлі: " << text.size() << endl;
 
     time_t now = time(0);
     tm* ltm = localtime(&now);
-    ofstream appendFile("input.txt", ios::app);
-    if (!appendFile.is_open()) {
-        cerr << "Не вдалося відкрити файл." << endl;
-        return "";
-    }
+    ofstream appendFile(inputFilename, ios::app);
 
     int digitCount = 0;
     for (char c : text) {
@@ -104,17 +91,11 @@ string TextFileFunc() {
     appendFile << "Дата та час дозапису: " << ltm->tm_mday << "/" << 1 + ltm->tm_mon << "/" << 1900 + ltm->tm_year << " "
                << ltm->tm_hour << ":" << ltm->tm_min << ":" << ltm->tm_sec << endl;
 
-    string words[] = {"модуль", "програма", "студент", "програміст"};
-    for (const string& word : words) {
-        int count = 0;
-        size_t pos = text.find(word, 0);
-        while (pos != string::npos) {
-            count++;
-            pos = text.find(word, pos + 1);
-        }
-        fout << "Слів \"" << word << "\" у тексті: " << count << endl;
-    }
+    input.close();
+    appendFile.close();
+}
 
+void BinaryCode(ofstream& fout) {
     double x, y, z;
     unsigned int b;
 
@@ -132,10 +113,6 @@ string TextFileFunc() {
             b /= 2;
         }
     }
-    fout << "Результат обчислення s_calculation: " << s_calculation(x, y, z) << endl;
+    fout << "Результат обчислення s_calculation: " << (x + y) * z << endl;
     fout << "Число b у двійковому коді: " << binary << endl;
-
-    fout.close();
-    appendFile.close();
-    input.close();
 }

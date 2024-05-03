@@ -13,7 +13,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../../../lab08/prj" />
 				</Compiler>
+				<Linker>
+					<Add library="../../../lab08/prj/Module/ModulesSambros.h" />
+					<Add library="../../../lab08/prj/ModulesSambros/bin/Debug/libModulesSambros.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/Testdriver" prefix_auto="1" extension_auto="1" />
