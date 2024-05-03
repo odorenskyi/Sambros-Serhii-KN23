@@ -68,6 +68,26 @@ void Devinfos(ofstream& fout) {
     fout << "Місто, країна: Кропивницький, Україна" << endl;
     fout << "Рік розробки: 2024" << endl;
     fout << "==================================================" << endl;
+
+    ifstream input("input.txt");
+    if (!input.is_open()) {
+        cerr << "Не вдалося відкрити вхідний файл." << endl;
+    }
+
+    string text;
+    getline(input, text);
+    fout << "Кількість символів у вхідному файлі: " << text.size() << endl;
+
+    string words[] = {"модуль", "програма", "студент", "програміст"};
+    for (const string& word : words) {
+        int count = 0;
+        size_t pos = text.find(word, 0);
+        while (pos != string::npos) {
+            count++;
+            pos = text.find(word, pos + 1);
+        }
+        fout << "Слів \"" << word << "\" у тексті: " << count << endl;
+    }
 }
 
 void InputFile(const string& inputFilename, ofstream& fout) {
