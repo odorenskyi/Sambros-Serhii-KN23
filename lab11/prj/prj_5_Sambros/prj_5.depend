@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1715970362 source:e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\prj_5\main.cpp
+	"ModulesTsarenko.h"
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
+1715965640 e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\prj_5\modulestsarenko.h
+	<string>
+	<vector>
+	"struct_type_project_5.h"
+
+1715959748 c:\users\acer\desktop\test_11\modules\struct_type_project_5.h
+	<string>
+
+1715965629 e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\prj_5\struct_type_project_5.h
+	<string>
+
+1716015667 source:e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\prj_5_sambros\main.cpp
+	<iostream>
+	"ModulesTsarenko.h"
+	"ModulesSambros.h"
+	"ModulesZamai.h"
+
+1715962279 e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\modules\modulestsarenko.h
+	<string>
+	<vector>
+	"struct_type_project_5.h"
+
+1715959748 e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\modules\struct_type_project_5.h
+	<string>
+
+1715962870 e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\modules\modulessambros.h
+	<string>
+	<vector>
+	"struct_type_project_5.h"
+
+1715962866 e:\bmtp\gitsms\sambros-serhii-kn23\lab11\prj\modules\moduleszamai.h
+	<string>
+	<vector>
+	"struct_type_project_5.h"
+
